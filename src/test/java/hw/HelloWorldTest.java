@@ -1,10 +1,11 @@
  package hw;
 
-import static org.junit.Assert.*;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class HelloWorldTest {
 
@@ -28,8 +29,8 @@ public class HelloWorldTest {
 
   @Test
   public void getMessage2() { // this test is broken - fix it!
-    assertNull(helloWorld);
-    assertEquals("helo world", helloWorld.getMessage());
+    assertNotNull(helloWorld);
+    assertEquals("hello world", helloWorld.getMessage());
   }
 
   @Test
